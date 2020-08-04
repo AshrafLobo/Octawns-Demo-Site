@@ -1,22 +1,29 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import '../utils/fontawesome';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import {
+  Layout,
+  Landing,
+  About,
+  Service,
+  Client,
+  Testimonials,
+  Blog,
+  Contact,
+} from '../components/component_barrel';
 
-const IndexPage = () => (
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const index = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <Landing />
+    <About />
+    <Service />
+    <Client />
+    <Testimonials />
+    <Blog />
+    <Contact />
   </Layout>
-)
+);
 
-export default IndexPage
+export default index;

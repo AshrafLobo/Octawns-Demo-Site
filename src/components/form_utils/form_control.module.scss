@@ -1,0 +1,40 @@
+.form_control {
+  input,
+  textarea {
+    color: white;
+    border: none;
+    border-bottom: solid 2px white;
+    background-color: transparent;
+    padding: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::placeholder {
+      color: white;
+      text-transform: capitalize;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      background-color: yellow !important;
+    }
+  }
+
+  input {
+    &:focus {
+      border-bottom: solid 2px #333333;
+    }
+  }
+
+  textarea {
+    min-height: 200px;
+    color: #333333;
+    background-color: white;
+    border-radius: 20px;
+  }
+}

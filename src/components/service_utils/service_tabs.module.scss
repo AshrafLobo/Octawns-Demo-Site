@@ -1,0 +1,29 @@
+$tab_border_color: rgb(255, 94, 0);
+
+.custom_tabs {
+  [role="tab"] {
+    color: #333333 !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 15px;
+
+    &:hover {
+      border-bottom: 2px solid lightgray !important;
+    }
+
+    &:active {
+      outline: none !important;
+      border-bottom: 2px solid $tab_border_color !important;
+    }
+
+    &:focus[aria-selected="true"] {
+      border-bottom: 2px solid $tab_border_color !important;
+    }
+  }
+
+  a[aria-selected="true"] {
+    color: gray !important;
+    border-bottom: 2px solid $tab_border_color !important;
+  }
+}
